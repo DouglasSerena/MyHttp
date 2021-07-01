@@ -1,4 +1,4 @@
-package com.example.myhttp;
+package com.example.myhttp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.example.myhttp.R;
+import com.example.myhttp.models.Currencies;
 
 import java.util.List;
 
@@ -26,11 +29,11 @@ public class CurrenciesAdapter extends ArrayAdapter<Currencies> {
         if(convertView==null){
             listaCurrencies= LayoutInflater.from(getContext()).inflate(R.layout.currencies_item,null);
         }
-        TextView name = listaCurrencies.findViewById(R.id.txtCoin);
-        TextView txtBuy = listaCurrencies.findViewById(R.id.txtCompra);
-        TextView txtSell = listaCurrencies.findViewById(R.id.txtVenda);
-        TextView variacao = listaCurrencies.findViewById(R.id.txtVariacao);
-            name.setText(coin.getName());
+        TextView name = listaCurrencies.findViewById(R.id.textName);
+        TextView txtBuy = listaCurrencies.findViewById(R.id.textLocation);
+        TextView txtSell = listaCurrencies.findViewById(R.id.textPoints);
+        TextView variacao = listaCurrencies.findViewById(R.id.textVariable);
+        name.setText(coin.getName());
             txtBuy.setText(coin.getBuy());
             txtSell.setText(coin.getSell());
             variacao.setText(coin.getVariation());

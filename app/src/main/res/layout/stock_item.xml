@@ -18,7 +18,7 @@
         android:textAllCaps="true"
         android:textSize="14sp"
         android:textStyle="bold"
-        tools:text="Bitcoin" />
+        tools:text="NAME" />
     <LinearLayout
         android:layout_margin="8dp"
         android:layout_weight="4"
@@ -28,23 +28,25 @@
         android:orientation="vertical"
 
         >
+
         <TextView
 
             android:id="@+id/textPoints"
-            android:textSize="14sp"
-            android:textStyle="italic"
-            android:textColor="@android:color/holo_red_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="VENDA R$ 37.000"/>
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:text="points" />
+
         <TextView
             android:id="@+id/textLocation"
-            android:textStyle="italic"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textSize="14sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text=" R$36.0000 COMPRA"/>
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:text="LOCATION" />
 
     </LinearLayout>
 
@@ -60,6 +62,6 @@
         android:textSize="14sp"
         android:textStyle="bold"
 
-        tools:text="21%" />
+        tools:text="VARIABLE" />
 
 </LinearLayout>
